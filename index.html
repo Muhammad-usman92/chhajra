@@ -43,11 +43,14 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+    <script
+      src="https://kit.fontawesome.com/2e08a6e5da.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <script>
     $(document).ready(function () {
       $(".items").slick({
-        dots: true,
         infinite: true,
         speed: 800,
         autoplay: true,
@@ -58,8 +61,8 @@
           {
             breakpoint: 1024,
             settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
+              slidesToShow: 1,
+              slidesToScroll: 1,
               infinite: true,
               dots: true,
             },
@@ -67,8 +70,8 @@
           {
             breakpoint: 600,
             settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
+              slidesToShow: 1,
+              slidesToScroll: 1,
             },
           },
           {
@@ -267,6 +270,51 @@
           </div>
         </div>
         <!-- Gallery End -->
+
+        <!-- News & Events -->
+        <div class="newsEvents">
+          <h1 class="text-center">News & Events</h1>
+
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-12 col-sm-12">
+              <div class="lefthand mb-4">
+                <div><img src="./assets/Rectangle 34.png" alt="" /></div>
+                <div>
+                  <p class="text-center">
+                    There are some text here about imag discription
+                  </p>
+                </div>
+                <br />
+                <div class="mt-4">
+                  <img src="./assets/Rectangle 34.png" alt="" />
+                </div>
+                <div class="mt-4">
+                  <p class="text-center">
+                    There are some text here about imag discription
+                  </p>
+                </div>
+              </div>
+              <div class="righthand"></div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-12 col-sm-12">
+              <div style="margin-top: 1rem">
+                <p
+                  class="text-center"
+                  style="color: #930000; font-weight: bold"
+                >
+                  This is the video discription
+                </p>
+
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/ifDsR6b3DB8"
+                >
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- footer -->
@@ -279,7 +327,7 @@
             <br />
 
             <div class="row">
-              <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+              <div class="col-lg-4 col-md-6 col-sm-12 col-12">
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Blanditiis fuga enim magni culpa, molestiae, voluptates
@@ -288,11 +336,59 @@
                   magnam dignissimos sit.
                 </p>
               </div>
-              <div class="col-lg-3 col-md-6 col-sm-12 col-12">this is dk</div>
-              <div class="col-lg-3 col-md-6 col-sm-12 col-12">this is dk</div>
-              <div class="col-lg-3 col-md-6 col-sm-12 col-12">this is dk</div>
+              <div class="col-lg-2 col-md-12 col-sm-12 col-12">
+                <p style="font-weight: bold">Community</p>
+                <p>About US</p>
+                <p>Members</p>
+                <!-- <ul style="list-style: none; color: white">
+                  <li>About Us</li>
+                  <li>Members</li>
+                </ul> -->
+              </div>
+              <div class="col-lg-2 col-md-12 col-sm-12 col-12">
+                <p style="font-weight: bold">Our Services</p>
+                <p>Our Mission</p>
+                <p>Help/contant Us</p>
+                <p>Term & Conditions</p>
+                <!-- <ul style="list-style: none; color: white">
+                  <li>Our Mission</li>
+                  <li>Help/Contact Us</li>
+                  <li>Terms and Conditions</li>
+                </ul> -->
+              </div>
+              <div class="col-lg-2 col-md-12 col-sm-12 col-12">
+                <p style="font-weight: bold">Follow US</p>
+                <div class="mb-3" style="display: flex; justify-content: space-around">
+                  <i
+                    class="fa-brands fa-2x fa-facebook"
+                    style="color: #ffffff"
+                  ></i>
+                  <i
+                    class="fa-brands fa-2x fa-twitter"
+                    style="color: #ffffff"
+                  ></i>
+                  <i
+                    class="fa-brands fa-2x fa-instagram"
+                    style="color: #ffffff"
+                  ></i>
+                  <i
+                    class="fa-brands fa-2x fa-youtube"
+                    style="color: #ffffff"
+                  ></i>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+        <div style="border-top: 1px solid white">
+          <a
+            style="text-decoration: none; color: white"
+            href="https://xcltechnologies.com/"
+          >
+            <p class="text-center" style="color: white">
+              2023|Powered By XCL Technologies
+            </p>
+          </a>
         </div>
       </div>
     </div>

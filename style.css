@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 .bg-img {
   background-image: url("./assets/flag-pakistan.jpg");
   background-position: center;
@@ -113,7 +117,8 @@
 
 .footer {
   background-color: black;
-  height: auto;
+  height: 100%;
+  padding-bottom: 5px;
 }
 .bottom-logo img {
   margin-top: 4px;
@@ -127,6 +132,17 @@
 .sub-footer p {
   color: white;
 }
+.newsEvents {
+  margin-top: 60px;
+  padding-left: 5%;
+}
+.lefthand {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 @media only screen and (max-width: 678px) {
   .about {
     margin-left: 0px !important;
@@ -134,5 +150,20 @@
   .about img {
     margin-top: 50px;
     width: 80% !important;
+  }
+  .bottom-logo img {
+    width: 30%;
+  }
+  .form {
+    padding-left: 1%;
+  }
+  iframe {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .newsEvents {
+    padding-left: 0%;
   }
 }
