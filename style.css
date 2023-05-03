@@ -1,7 +1,244 @@
+/* -------------- font google --------- */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+/* ----------- global ---------------- */
+
 body {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #232423;
+  margin: 0;
+}
+/* ----------- navbar css----------- */
+
+.navbar-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+.sticky {
+  background-color: #212428de;
+  box-shadow: 0 15px 20px 0 rgb(0 0 0 / 10%);
+  position: fixed;
+  backdrop-filter: blur(15px);
+  top: 0;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  animation: headerSlideDown 0.8s linear forwards;
+}
+
+@keyframes headerSlideDown {
+  0%,
+  50% {
+    transform: translateY(-100px);
+  }
+}
+
+.navbar {
+  position: relative;
+}
+
+.navbar-brand .image {
+  width: 130px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 999px),
+  (max-width: 767px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 5px 12px;
+    border-radius: 0px 0px 10px 10px;
+    color: #000 !important;
+    background-color: #017121;
+    box-shadow: 0 15px 20px 0 rgb(0 0 0 / 10%);
+  }
+  .buy-now {
+    display: none;
+  }
+
+  .main--btn--print {
+    display: grid !important;
+  }
+
+  .nav-link {
+    font-size: 12px !important;
+  }
+
+  .buy-now input {
+    padding: 7px 20px !important;
+  }
+}
+
+.navbar-light .navbar-toggler {
+  color: transparent;
+  border-color: transparent;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-nav .nav-item {
+  position: relative;
+  margin-left: 60px;
+}
+
+.navbar-nav .nav-item .nav-link {
+  position: relative;
+  padding: 10px 0;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #fff !important;
+}
+
+.navbar-nav .nav-item .nav-link.active,
+.navbar-nav .nav-item .nav-link:hover {
+  color: #00e742 !important;
+}
+.nav-bar-icon {
+  color: #fff;
+  font-size: 25px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px),
+  (max-width: 767px) {
+  .navbar-nav .nav-item .nav-link::before {
+    position: relative;
+  }
+}
+
+.buy-now {
+  padding: 0px 30px !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.navbar-nav .nav-item .nav-link.active::before,
+.navbar-nav .nav-item .nav-link:hover::before {
+  visibility: visible;
+  width: 25px;
+}
+.buy-now input {
+  border-radius: 50px;
+  transition: 0.4s;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  padding: 5px 35px;
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  font-size: 14px;
+  font-weight: 500;
+  background: transparent;
+}
+.buy-now input:hover {
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.9669117647058824);
+  border: 2px solid #017121;
+  background: #017121;
+}
+/* ===== Sections ==== hero === */
+.main-hero-sec {
+  height: 100vh;
+  background-image: url("./assets/plag-2.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  overflow: hidden;
+  background-size: cover;
+}
+.background_overflow {
+  background: rgba(0, 0, 0, 0.61);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.main-text--hero {
+  padding: 50% 0px;
+  color: #fff;
+}
+.main-text--hero h1 {
+  color: #fff !important;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 80px;
+  margin-bottom: 22px;
+  /*  text-shadow: #017120 11px 5px 20px;*/
+  text-shadow: #024a15 0px 19px 20px;
+}
+
+.btn-join {
+  position: relative;
+  padding: 10px 65px;
+  outline: none;
+  border-radius: 50px;
+  border: 1px solid #017121;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.9669117647058824);
+  background: #017121;
+  transition: all 0.6s ease-in-out;
+}
+
+.btn-join:hover {
+  box-shadow: none;
+  border: 1px solid #fff;
+  background: transparent;
+}
+
+@media only screen and (max-width: 676px) {
+  .main-hero-sec {
+    padding: 50% 0px;
+  }
+  .main-text--hero h1 {
+    font-size: 40px;
+  }
+  .main-text--hero p {
+    font-size: 14px;
+  }
+}
+
 .bg-img {
   background-image: url("./assets/flag-pakistan.jpg");
   background-position: center;
@@ -69,6 +306,8 @@ body {
 .form {
   padding-top: 60px;
   padding-left: 5%;
+  background: #fafafa;
+  margin-top: 33px;
 }
 .form label {
   font-weight: bold;
@@ -141,6 +380,80 @@ body {
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+#foot {
+  background: #000;
+  height: auto;
+  padding: 50px 0;
+  color: #fff;
+}
+.content img {
+  width: 150px;
+}
+.content p {
+  font-weight: 400;
+  color: #fff;
+}
+
+.menu--fot h4 {
+  letter-spacing: 1px;
+}
+.menu--fot ul {
+  padding: 0;
+}
+.menu--fot ul li a {
+  text-decoration: none;
+  color: #fff;
+  /* border-bottom: 1px solid #00e742; */
+  transition: all 0.5s ease;
+  padding: 5px 0;
+}
+.menu--fot ul li a:hover {
+  color: #00e742;
+  /* border-bottom: 1px solid #fff; */
+  letter-spacing: 0.1em;
+}
+
+.links--media {
+  padding: 0;
+}
+.links--media li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+.links--media li a {
+  text-decoration: none;
+}
+.links--media li a i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 0;
+  font-size: 25px !important;
+}
+.links--media li a:hover {
+  background: #00e742;
+  box-shadow: 0 0 7px 0 #00e742;
+  color: #fff;
+}
+.links--media li a {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  color: #000;
+  transition: all 0.5s ease;
+  box-shadow: 0 0 7px 0 #fff;
+}
+
+.cusborder {
+  width: 100px;
+  height: 3px;
+  padding: 0;
+  border-radius: 50px;
+  margin: 0;
+  background: #018b28;
 }
 
 @media only screen and (max-width: 678px) {
